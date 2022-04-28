@@ -1,0 +1,4 @@
+subroutine surfaceKave_xgb(Klcr,Ku,percent)
+implicit none
+
+end subroutine surfaceKave_xgb

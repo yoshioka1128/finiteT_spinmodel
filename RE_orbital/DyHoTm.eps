@@ -1,0 +1,6292 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: DyHoTm.eps
+%%Creator: gnuplot 5.0 patchlevel 1
+%%CreationDate: Tue Feb 27 17:47:47 2018
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.0 (Dec 2014)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (DyHoTm.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 1)
+  /Author (yoshioka)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Tue Feb 27 17:47:47 2018)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+/Helvetica findfont 140 scalefont setfont
+/Helvetica findfont 140 scalefont setfont
+/Helvetica findfont 140 scalefont setfont
+/Helvetica findfont 140 scalefont setfont
+/Helvetica findfont 140 scalefont setfont
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 280 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 936 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 936 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1592 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 1592 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2248 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 2248 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2903 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 2903 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3559 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 3559 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4215 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 4215 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4871 M
+63 0 V
+6338 0 R
+-63 0 V
+stroke
+462 4871 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+546 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1460 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+1460 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2375 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+2375 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3289 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+3289 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4204 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+4204 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5118 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+5118 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6033 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+6033 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4528 R
+0 -63 V
+stroke
+6947 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4871 N
+546 280 L
+6401 0 V
+0 4591 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4738 M
+("Pr3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C 546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+546 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+547 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+548 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+549 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+550 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+551 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+552 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+553 280 Pls
+554 280 Pls
+554 280 Pls
+554 280 Pls
+554 280 Pls
+554 280 Pls
+554 280 Pls
+554 280 Pls
+555 280 Pls
+555 280 Pls
+555 280 Pls
+555 280 Pls
+555 280 Pls
+555 280 Pls
+555 280 Pls
+556 280 Pls
+556 280 Pls
+556 280 Pls
+556 280 Pls
+556 280 Pls
+556 280 Pls
+557 280 Pls
+557 280 Pls
+557 280 Pls
+557 280 Pls
+557 280 Pls
+557 280 Pls
+558 280 Pls
+558 280 Pls
+558 280 Pls
+558 280 Pls
+558 280 Pls
+559 280 Pls
+559 280 Pls
+559 280 Pls
+559 280 Pls
+559 280 Pls
+560 280 Pls
+560 280 Pls
+560 280 Pls
+560 280 Pls
+561 280 Pls
+561 280 Pls
+561 280 Pls
+561 280 Pls
+562 280 Pls
+562 280 Pls
+562 280 Pls
+562 280 Pls
+563 280 Pls
+563 280 Pls
+563 280 Pls
+563 280 Pls
+564 280 Pls
+564 280 Pls
+564 280 Pls
+565 280 Pls
+565 280 Pls
+565 280 Pls
+565 280 Pls
+566 280 Pls
+566 280 Pls
+566 280 Pls
+567 280 Pls
+567 280 Pls
+567 280 Pls
+568 280 Pls
+568 280 Pls
+569 280 Pls
+569 280 Pls
+569 280 Pls
+570 280 Pls
+570 280 Pls
+570 280 Pls
+571 280 Pls
+571 280 Pls
+572 280 Pls
+572 280 Pls
+573 280 Pls
+573 280 Pls
+573 280 Pls
+574 280 Pls
+574 280 Pls
+575 280 Pls
+575 280 Pls
+576 280 Pls
+576 280 Pls
+577 280 Pls
+577 280 Pls
+578 280 Pls
+578 280 Pls
+579 280 Pls
+579 280 Pls
+580 280 Pls
+580 280 Pls
+581 280 Pls
+582 280 Pls
+582 280 Pls
+583 280 Pls
+583 280 Pls
+584 280 Pls
+585 280 Pls
+585 280 Pls
+586 280 Pls
+587 280 Pls
+587 280 Pls
+588 280 Pls
+589 280 Pls
+589 280 Pls
+590 280 Pls
+591 280 Pls
+591 280 Pls
+592 280 Pls
+593 280 Pls
+594 280 Pls
+594 280 Pls
+595 280 Pls
+596 280 Pls
+597 280 Pls
+598 280 Pls
+599 280 Pls
+599 280 Pls
+600 280 Pls
+601 280 Pls
+602 280 Pls
+603 280 Pls
+604 280 Pls
+605 280 Pls
+606 280 Pls
+607 280 Pls
+608 280 Pls
+609 280 Pls
+610 280 Pls
+611 280 Pls
+612 280 Pls
+613 280 Pls
+614 280 Pls
+615 280 Pls
+616 280 Pls
+618 280 Pls
+619 280 Pls
+620 280 Pls
+621 280 Pls
+622 280 Pls
+624 280 Pls
+625 280 Pls
+626 280 Pls
+627 280 Pls
+629 280 Pls
+630 280 Pls
+632 280 Pls
+633 280 Pls
+634 280 Pls
+636 280 Pls
+637 280 Pls
+639 280 Pls
+640 280 Pls
+642 280 Pls
+643 280 Pls
+645 280 Pls
+647 280 Pls
+648 280 Pls
+650 280 Pls
+652 280 Pls
+653 280 Pls
+655 280 Pls
+657 280 Pls
+659 280 Pls
+661 280 Pls
+663 280 Pls
+664 280 Pls
+666 280 Pls
+668 280 Pls
+670 280 Pls
+672 280 Pls
+674 280 Pls
+677 280 Pls
+679 280 Pls
+681 281 Pls
+683 281 Pls
+685 281 Pls
+688 281 Pls
+690 281 Pls
+692 281 Pls
+695 281 Pls
+697 281 Pls
+700 281 Pls
+702 281 Pls
+705 281 Pls
+707 281 Pls
+710 282 Pls
+713 282 Pls
+715 282 Pls
+718 282 Pls
+721 282 Pls
+724 283 Pls
+727 283 Pls
+730 283 Pls
+733 283 Pls
+736 284 Pls
+739 284 Pls
+742 284 Pls
+745 285 Pls
+748 285 Pls
+752 286 Pls
+755 286 Pls
+759 287 Pls
+762 287 Pls
+766 288 Pls
+769 289 Pls
+773 289 Pls
+777 290 Pls
+780 291 Pls
+784 292 Pls
+788 293 Pls
+792 294 Pls
+796 296 Pls
+800 297 Pls
+804 298 Pls
+809 300 Pls
+813 301 Pls
+817 303 Pls
+822 305 Pls
+826 307 Pls
+831 309 Pls
+835 312 Pls
+840 314 Pls
+845 317 Pls
+850 320 Pls
+855 323 Pls
+860 326 Pls
+865 329 Pls
+870 333 Pls
+876 337 Pls
+881 341 Pls
+887 346 Pls
+892 350 Pls
+898 355 Pls
+904 361 Pls
+909 366 Pls
+915 372 Pls
+921 378 Pls
+928 385 Pls
+934 392 Pls
+940 400 Pls
+947 407 Pls
+953 416 Pls
+960 424 Pls
+967 433 Pls
+974 443 Pls
+981 453 Pls
+988 463 Pls
+995 474 Pls
+1002 486 Pls
+1010 498 Pls
+1017 511 Pls
+1025 524 Pls
+1033 537 Pls
+1041 551 Pls
+1049 566 Pls
+1057 581 Pls
+1066 597 Pls
+1074 614 Pls
+1083 630 Pls
+1092 648 Pls
+1101 666 Pls
+1110 685 Pls
+1119 704 Pls
+1128 723 Pls
+1138 744 Pls
+1147 764 Pls
+1157 785 Pls
+1167 807 Pls
+1178 829 Pls
+1188 851 Pls
+1198 874 Pls
+1209 898 Pls
+1220 921 Pls
+1231 945 Pls
+1242 969 Pls
+1254 993 Pls
+1265 1018 Pls
+1277 1042 Pls
+1289 1067 Pls
+1301 1092 Pls
+1314 1116 Pls
+1326 1141 Pls
+1339 1166 Pls
+1352 1190 Pls
+1365 1214 Pls
+1378 1238 Pls
+1392 1261 Pls
+1406 1284 Pls
+1420 1307 Pls
+1434 1329 Pls
+1449 1351 Pls
+1464 1371 Pls
+1479 1392 Pls
+1494 1411 Pls
+1510 1430 Pls
+1525 1447 Pls
+1541 1464 Pls
+1558 1480 Pls
+1574 1495 Pls
+1591 1509 Pls
+1608 1522 Pls
+1626 1534 Pls
+1643 1544 Pls
+1661 1553 Pls
+1680 1562 Pls
+1698 1569 Pls
+1717 1574 Pls
+1736 1579 Pls
+1756 1582 Pls
+1776 1584 Pls
+1796 1585 Pls
+1816 1584 Pls
+1837 1582 Pls
+1858 1579 Pls
+1880 1575 Pls
+1902 1569 Pls
+1924 1563 Pls
+1946 1555 Pls
+1969 1546 Pls
+1993 1535 Pls
+2016 1524 Pls
+2040 1512 Pls
+2065 1498 Pls
+2090 1484 Pls
+2115 1468 Pls
+2141 1452 Pls
+2167 1435 Pls
+2193 1417 Pls
+2220 1398 Pls
+2248 1379 Pls
+2276 1359 Pls
+2304 1338 Pls
+2333 1317 Pls
+2362 1295 Pls
+2392 1273 Pls
+2422 1250 Pls
+2453 1227 Pls
+2484 1204 Pls
+2516 1180 Pls
+2548 1156 Pls
+2581 1132 Pls
+2614 1108 Pls
+2648 1084 Pls
+2683 1060 Pls
+2718 1035 Pls
+2753 1011 Pls
+2789 987 Pls
+2826 963 Pls
+2864 939 Pls
+2902 916 Pls
+2940 892 Pls
+2979 869 Pls
+3019 847 Pls
+3060 824 Pls
+3101 802 Pls
+3143 780 Pls
+3185 759 Pls
+3229 738 Pls
+3273 718 Pls
+3317 698 Pls
+3363 678 Pls
+3409 659 Pls
+3456 641 Pls
+3503 623 Pls
+3552 606 Pls
+3601 589 Pls
+3651 572 Pls
+3702 556 Pls
+3754 541 Pls
+3806 526 Pls
+3860 512 Pls
+3914 499 Pls
+3969 486 Pls
+4025 473 Pls
+4082 461 Pls
+4140 449 Pls
+4199 438 Pls
+4259 428 Pls
+4320 418 Pls
+4382 408 Pls
+4444 399 Pls
+4508 391 Pls
+4573 383 Pls
+4639 375 Pls
+4706 368 Pls
+4774 361 Pls
+4844 355 Pls
+4914 349 Pls
+4986 343 Pls
+5058 338 Pls
+5132 333 Pls
+5207 328 Pls
+5284 324 Pls
+5361 320 Pls
+5440 316 Pls
+5521 313 Pls
+5602 310 Pls
+5685 307 Pls
+5769 304 Pls
+5855 302 Pls
+5942 299 Pls
+6030 297 Pls
+6120 295 Pls
+6211 294 Pls
+6304 292 Pls
+6398 291 Pls
+6579 4738 Pls
+% End plot #1
+% Begin plot #2
+1.000 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4598 M
+("Nd3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C 546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+546 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+547 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+548 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+549 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+550 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+551 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+552 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+553 280 Crs
+554 280 Crs
+554 280 Crs
+554 280 Crs
+554 280 Crs
+554 280 Crs
+554 280 Crs
+554 280 Crs
+555 280 Crs
+555 280 Crs
+555 280 Crs
+555 280 Crs
+555 280 Crs
+555 280 Crs
+555 280 Crs
+556 280 Crs
+556 280 Crs
+556 280 Crs
+556 280 Crs
+556 280 Crs
+556 280 Crs
+557 280 Crs
+557 280 Crs
+557 280 Crs
+557 280 Crs
+557 280 Crs
+557 280 Crs
+558 280 Crs
+558 280 Crs
+558 280 Crs
+558 280 Crs
+558 280 Crs
+559 280 Crs
+559 280 Crs
+559 280 Crs
+559 280 Crs
+559 280 Crs
+560 280 Crs
+560 280 Crs
+560 280 Crs
+560 280 Crs
+561 280 Crs
+561 280 Crs
+561 280 Crs
+561 280 Crs
+562 280 Crs
+562 280 Crs
+562 280 Crs
+562 280 Crs
+563 280 Crs
+563 280 Crs
+563 280 Crs
+563 280 Crs
+564 280 Crs
+564 280 Crs
+564 280 Crs
+565 280 Crs
+565 280 Crs
+565 280 Crs
+565 280 Crs
+566 280 Crs
+566 280 Crs
+566 280 Crs
+567 280 Crs
+567 280 Crs
+567 280 Crs
+568 280 Crs
+568 280 Crs
+569 280 Crs
+569 280 Crs
+569 280 Crs
+570 280 Crs
+570 280 Crs
+570 280 Crs
+571 280 Crs
+571 280 Crs
+572 280 Crs
+572 280 Crs
+573 280 Crs
+573 280 Crs
+573 280 Crs
+574 280 Crs
+574 280 Crs
+575 280 Crs
+575 280 Crs
+576 280 Crs
+576 280 Crs
+577 280 Crs
+577 280 Crs
+578 280 Crs
+578 280 Crs
+579 280 Crs
+579 280 Crs
+580 280 Crs
+580 280 Crs
+581 280 Crs
+582 280 Crs
+582 280 Crs
+583 280 Crs
+583 280 Crs
+584 280 Crs
+585 280 Crs
+585 280 Crs
+586 280 Crs
+587 280 Crs
+587 280 Crs
+588 280 Crs
+589 280 Crs
+589 280 Crs
+590 280 Crs
+591 280 Crs
+591 280 Crs
+592 280 Crs
+593 280 Crs
+594 280 Crs
+594 280 Crs
+595 280 Crs
+596 280 Crs
+597 280 Crs
+598 280 Crs
+599 280 Crs
+599 280 Crs
+600 280 Crs
+601 280 Crs
+602 280 Crs
+603 280 Crs
+604 280 Crs
+605 280 Crs
+606 280 Crs
+607 280 Crs
+608 280 Crs
+609 280 Crs
+610 280 Crs
+611 280 Crs
+612 280 Crs
+613 280 Crs
+614 280 Crs
+615 280 Crs
+616 280 Crs
+618 280 Crs
+619 280 Crs
+620 280 Crs
+621 280 Crs
+622 280 Crs
+624 280 Crs
+625 280 Crs
+626 280 Crs
+627 280 Crs
+629 280 Crs
+630 280 Crs
+632 280 Crs
+633 280 Crs
+634 280 Crs
+636 280 Crs
+637 280 Crs
+639 280 Crs
+640 280 Crs
+642 280 Crs
+643 280 Crs
+645 280 Crs
+647 280 Crs
+648 280 Crs
+650 280 Crs
+652 280 Crs
+653 280 Crs
+655 280 Crs
+657 280 Crs
+659 280 Crs
+661 280 Crs
+663 280 Crs
+664 280 Crs
+666 280 Crs
+668 280 Crs
+670 280 Crs
+672 280 Crs
+674 281 Crs
+677 281 Crs
+679 281 Crs
+681 281 Crs
+683 281 Crs
+685 281 Crs
+688 281 Crs
+690 281 Crs
+692 281 Crs
+695 281 Crs
+697 281 Crs
+700 282 Crs
+702 282 Crs
+705 282 Crs
+707 282 Crs
+710 282 Crs
+713 282 Crs
+715 283 Crs
+718 283 Crs
+721 283 Crs
+724 283 Crs
+727 284 Crs
+730 284 Crs
+733 284 Crs
+736 285 Crs
+739 285 Crs
+742 286 Crs
+745 286 Crs
+748 287 Crs
+752 288 Crs
+755 288 Crs
+759 289 Crs
+762 290 Crs
+766 291 Crs
+769 292 Crs
+773 293 Crs
+777 294 Crs
+780 295 Crs
+784 296 Crs
+788 297 Crs
+792 299 Crs
+796 301 Crs
+800 302 Crs
+804 304 Crs
+809 306 Crs
+813 308 Crs
+817 310 Crs
+822 313 Crs
+826 315 Crs
+831 318 Crs
+835 321 Crs
+840 324 Crs
+845 328 Crs
+850 331 Crs
+855 335 Crs
+860 339 Crs
+865 344 Crs
+870 348 Crs
+876 353 Crs
+881 358 Crs
+887 364 Crs
+892 370 Crs
+898 376 Crs
+904 383 Crs
+909 390 Crs
+915 397 Crs
+921 405 Crs
+928 413 Crs
+934 421 Crs
+940 430 Crs
+947 440 Crs
+953 450 Crs
+960 460 Crs
+967 471 Crs
+974 483 Crs
+981 495 Crs
+988 508 Crs
+995 521 Crs
+1002 534 Crs
+1010 549 Crs
+1017 564 Crs
+1025 579 Crs
+1033 595 Crs
+1041 612 Crs
+1049 629 Crs
+1057 646 Crs
+1066 665 Crs
+1074 684 Crs
+1083 703 Crs
+1092 723 Crs
+1101 744 Crs
+1110 765 Crs
+1119 787 Crs
+1128 809 Crs
+1138 831 Crs
+1147 854 Crs
+1157 878 Crs
+1167 902 Crs
+1178 926 Crs
+1188 951 Crs
+1198 976 Crs
+1209 1001 Crs
+1220 1026 Crs
+1231 1052 Crs
+1242 1077 Crs
+1254 1103 Crs
+1265 1129 Crs
+1277 1155 Crs
+1289 1180 Crs
+1301 1206 Crs
+1314 1231 Crs
+1326 1256 Crs
+1339 1281 Crs
+1352 1306 Crs
+1365 1330 Crs
+1378 1353 Crs
+1392 1376 Crs
+1406 1398 Crs
+1420 1420 Crs
+1434 1441 Crs
+1449 1461 Crs
+1464 1480 Crs
+1479 1498 Crs
+1494 1515 Crs
+1510 1532 Crs
+1525 1547 Crs
+1541 1561 Crs
+1558 1574 Crs
+1574 1586 Crs
+1591 1596 Crs
+1608 1606 Crs
+1626 1614 Crs
+1643 1621 Crs
+1661 1626 Crs
+1680 1630 Crs
+1698 1633 Crs
+1717 1635 Crs
+1736 1635 Crs
+1756 1634 Crs
+1776 1631 Crs
+1796 1628 Crs
+1816 1623 Crs
+1837 1616 Crs
+1858 1609 Crs
+1880 1600 Crs
+1902 1590 Crs
+1924 1579 Crs
+1946 1567 Crs
+1969 1553 Crs
+1993 1539 Crs
+2016 1523 Crs
+2040 1507 Crs
+2065 1490 Crs
+2090 1471 Crs
+2115 1452 Crs
+2141 1432 Crs
+2167 1412 Crs
+2193 1391 Crs
+2220 1369 Crs
+2248 1347 Crs
+2276 1324 Crs
+2304 1300 Crs
+2333 1277 Crs
+2362 1252 Crs
+2392 1228 Crs
+2422 1203 Crs
+2453 1179 Crs
+2484 1154 Crs
+2516 1129 Crs
+2548 1104 Crs
+2581 1078 Crs
+2614 1053 Crs
+2648 1028 Crs
+2683 1003 Crs
+2718 979 Crs
+2753 954 Crs
+2789 930 Crs
+2826 906 Crs
+2864 882 Crs
+2902 859 Crs
+2940 836 Crs
+2979 813 Crs
+3019 791 Crs
+3060 769 Crs
+3101 748 Crs
+3143 727 Crs
+3185 707 Crs
+3229 687 Crs
+3273 667 Crs
+3317 649 Crs
+3363 630 Crs
+3409 613 Crs
+3456 595 Crs
+3503 579 Crs
+3552 563 Crs
+3601 547 Crs
+3651 532 Crs
+3702 518 Crs
+3754 504 Crs
+3806 490 Crs
+3860 478 Crs
+3914 465 Crs
+3969 454 Crs
+4025 442 Crs
+4082 432 Crs
+4140 422 Crs
+4199 412 Crs
+4259 403 Crs
+4320 394 Crs
+4382 386 Crs
+4444 378 Crs
+4508 371 Crs
+4573 364 Crs
+4639 357 Crs
+4706 351 Crs
+4774 345 Crs
+4844 340 Crs
+4914 335 Crs
+4986 330 Crs
+5058 326 Crs
+5132 322 Crs
+5207 318 Crs
+5284 314 Crs
+5361 311 Crs
+5440 308 Crs
+5521 305 Crs
+5602 303 Crs
+5685 300 Crs
+5769 298 Crs
+5855 296 Crs
+5942 295 Crs
+6030 293 Crs
+6120 292 Crs
+6211 290 Crs
+6304 289 Crs
+6398 288 Crs
+6579 4598 Crs
+% End plot #2
+% Begin plot #3
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4458 M
+("Sm3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C 546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+546 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+547 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+548 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+549 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+550 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+551 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+552 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+553 280 Star
+554 280 Star
+554 280 Star
+554 280 Star
+554 280 Star
+554 280 Star
+554 280 Star
+554 280 Star
+555 280 Star
+555 280 Star
+555 280 Star
+555 280 Star
+555 280 Star
+555 280 Star
+555 280 Star
+556 280 Star
+556 280 Star
+556 280 Star
+556 280 Star
+556 280 Star
+556 280 Star
+557 280 Star
+557 280 Star
+557 280 Star
+557 280 Star
+557 280 Star
+557 280 Star
+558 280 Star
+558 280 Star
+558 280 Star
+558 280 Star
+558 280 Star
+559 280 Star
+559 280 Star
+559 280 Star
+559 280 Star
+559 280 Star
+560 280 Star
+560 280 Star
+560 280 Star
+560 280 Star
+561 280 Star
+561 280 Star
+561 280 Star
+561 280 Star
+562 280 Star
+562 280 Star
+562 280 Star
+562 280 Star
+563 280 Star
+563 280 Star
+563 280 Star
+563 280 Star
+564 280 Star
+564 280 Star
+564 280 Star
+565 280 Star
+565 280 Star
+565 280 Star
+565 280 Star
+566 280 Star
+566 280 Star
+566 280 Star
+567 280 Star
+567 280 Star
+567 280 Star
+568 280 Star
+568 280 Star
+569 280 Star
+569 280 Star
+569 280 Star
+570 280 Star
+570 280 Star
+570 280 Star
+571 280 Star
+571 280 Star
+572 280 Star
+572 280 Star
+573 280 Star
+573 280 Star
+573 280 Star
+574 280 Star
+574 280 Star
+575 280 Star
+575 280 Star
+576 280 Star
+576 280 Star
+577 280 Star
+577 280 Star
+578 280 Star
+578 280 Star
+579 280 Star
+579 280 Star
+580 280 Star
+580 280 Star
+581 280 Star
+582 280 Star
+582 280 Star
+583 280 Star
+583 280 Star
+584 280 Star
+585 280 Star
+585 280 Star
+586 280 Star
+587 280 Star
+587 280 Star
+588 280 Star
+589 280 Star
+589 280 Star
+590 280 Star
+591 280 Star
+591 280 Star
+592 280 Star
+593 280 Star
+594 280 Star
+594 280 Star
+595 280 Star
+596 280 Star
+597 280 Star
+598 280 Star
+599 280 Star
+599 280 Star
+600 280 Star
+601 280 Star
+602 280 Star
+603 280 Star
+604 280 Star
+605 280 Star
+606 280 Star
+607 280 Star
+608 280 Star
+609 280 Star
+610 280 Star
+611 280 Star
+612 280 Star
+613 280 Star
+614 280 Star
+615 280 Star
+616 280 Star
+618 280 Star
+619 280 Star
+620 280 Star
+621 280 Star
+622 280 Star
+624 280 Star
+625 280 Star
+626 280 Star
+627 280 Star
+629 280 Star
+630 280 Star
+632 280 Star
+633 280 Star
+634 280 Star
+636 280 Star
+637 280 Star
+639 280 Star
+640 280 Star
+642 280 Star
+643 280 Star
+645 280 Star
+647 280 Star
+648 280 Star
+650 280 Star
+652 280 Star
+653 280 Star
+655 280 Star
+657 280 Star
+659 280 Star
+661 280 Star
+663 280 Star
+664 280 Star
+666 281 Star
+668 281 Star
+670 281 Star
+672 281 Star
+674 281 Star
+677 281 Star
+679 281 Star
+681 281 Star
+683 281 Star
+685 281 Star
+688 281 Star
+690 282 Star
+692 282 Star
+695 282 Star
+697 282 Star
+700 282 Star
+702 282 Star
+705 283 Star
+707 283 Star
+710 283 Star
+713 284 Star
+715 284 Star
+718 284 Star
+721 285 Star
+724 285 Star
+727 286 Star
+730 286 Star
+733 287 Star
+736 287 Star
+739 288 Star
+742 289 Star
+745 289 Star
+748 290 Star
+752 291 Star
+755 292 Star
+759 293 Star
+762 294 Star
+766 295 Star
+769 297 Star
+773 298 Star
+777 300 Star
+780 301 Star
+784 303 Star
+788 305 Star
+792 307 Star
+796 309 Star
+800 312 Star
+804 314 Star
+809 317 Star
+813 320 Star
+817 323 Star
+822 326 Star
+826 330 Star
+831 334 Star
+835 338 Star
+840 342 Star
+845 347 Star
+850 352 Star
+855 357 Star
+860 363 Star
+865 368 Star
+870 375 Star
+876 381 Star
+881 388 Star
+887 396 Star
+892 404 Star
+898 412 Star
+904 421 Star
+909 430 Star
+915 440 Star
+921 450 Star
+928 460 Star
+934 472 Star
+940 483 Star
+947 496 Star
+953 509 Star
+960 522 Star
+967 536 Star
+974 551 Star
+981 566 Star
+988 582 Star
+995 599 Star
+1002 616 Star
+1010 634 Star
+1017 652 Star
+1025 671 Star
+1033 691 Star
+1041 711 Star
+1049 732 Star
+1057 754 Star
+1066 776 Star
+1074 799 Star
+1083 822 Star
+1092 846 Star
+1101 871 Star
+1110 895 Star
+1119 921 Star
+1128 947 Star
+1138 973 Star
+1147 999 Star
+1157 1026 Star
+1167 1053 Star
+1178 1081 Star
+1188 1108 Star
+1198 1136 Star
+1209 1164 Star
+1220 1192 Star
+1231 1219 Star
+1242 1247 Star
+1254 1274 Star
+1265 1302 Star
+1277 1329 Star
+1289 1355 Star
+1301 1382 Star
+1314 1407 Star
+1326 1432 Star
+1339 1457 Star
+1352 1481 Star
+1365 1504 Star
+1378 1526 Star
+1392 1548 Star
+1406 1568 Star
+1420 1587 Star
+1434 1606 Star
+1449 1623 Star
+1464 1639 Star
+1479 1654 Star
+1494 1668 Star
+1510 1680 Star
+1525 1691 Star
+1541 1701 Star
+1558 1709 Star
+1574 1716 Star
+1591 1721 Star
+1608 1725 Star
+1626 1728 Star
+1643 1729 Star
+1661 1729 Star
+1680 1727 Star
+1698 1724 Star
+1717 1719 Star
+1736 1713 Star
+1756 1706 Star
+1776 1697 Star
+1796 1687 Star
+1816 1676 Star
+1837 1663 Star
+1858 1650 Star
+1880 1635 Star
+1902 1619 Star
+1924 1602 Star
+1946 1584 Star
+1969 1565 Star
+1993 1545 Star
+2016 1524 Star
+2040 1503 Star
+2065 1480 Star
+2090 1457 Star
+2115 1434 Star
+2141 1410 Star
+2167 1385 Star
+2193 1360 Star
+2220 1334 Star
+2248 1308 Star
+2276 1282 Star
+2304 1256 Star
+2333 1229 Star
+2362 1203 Star
+2392 1176 Star
+2422 1149 Star
+2453 1123 Star
+2484 1096 Star
+2516 1070 Star
+2548 1043 Star
+2581 1017 Star
+2614 991 Star
+2648 966 Star
+2683 940 Star
+2718 916 Star
+2753 891 Star
+2789 867 Star
+2826 843 Star
+2864 820 Star
+2902 797 Star
+2940 775 Star
+2979 753 Star
+3019 731 Star
+3060 711 Star
+3101 690 Star
+3143 671 Star
+3185 652 Star
+3229 633 Star
+3273 615 Star
+3317 598 Star
+3363 581 Star
+3409 565 Star
+3456 549 Star
+3503 534 Star
+3552 519 Star
+3601 505 Star
+3651 492 Star
+3702 479 Star
+3754 467 Star
+3806 455 Star
+3860 444 Star
+3914 433 Star
+3969 423 Star
+4025 413 Star
+4082 404 Star
+4140 396 Star
+4199 387 Star
+4259 380 Star
+4320 372 Star
+4382 365 Star
+4444 359 Star
+4508 352 Star
+4573 347 Star
+4639 341 Star
+4706 336 Star
+4774 331 Star
+4844 327 Star
+4914 323 Star
+4986 319 Star
+5058 316 Star
+5132 312 Star
+5207 309 Star
+5284 306 Star
+5361 304 Star
+5440 301 Star
+5521 299 Star
+5602 297 Star
+5685 295 Star
+5769 294 Star
+5855 292 Star
+5942 291 Star
+6030 290 Star
+6120 289 Star
+6211 288 Star
+6304 287 Star
+6398 286 Star
+6579 4458 Star
+% End plot #3
+% Begin plot #4
+1.000 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4318 M
+("Tb3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C 546 4477 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+546 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+547 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+548 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+549 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+550 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+551 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+552 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+553 280 Box
+554 280 Box
+554 280 Box
+554 280 Box
+554 280 Box
+554 280 Box
+554 280 Box
+554 280 Box
+555 280 Box
+555 280 Box
+555 280 Box
+555 280 Box
+555 280 Box
+555 280 Box
+555 280 Box
+556 280 Box
+556 280 Box
+556 280 Box
+556 280 Box
+556 280 Box
+556 280 Box
+557 280 Box
+557 280 Box
+557 280 Box
+557 280 Box
+557 280 Box
+557 280 Box
+558 280 Box
+558 280 Box
+558 280 Box
+558 280 Box
+558 280 Box
+559 280 Box
+559 280 Box
+559 280 Box
+559 280 Box
+559 280 Box
+560 280 Box
+560 280 Box
+560 280 Box
+560 280 Box
+561 280 Box
+561 280 Box
+561 280 Box
+561 280 Box
+562 280 Box
+562 280 Box
+562 280 Box
+562 280 Box
+563 280 Box
+563 280 Box
+563 280 Box
+563 280 Box
+564 280 Box
+564 280 Box
+564 280 Box
+565 280 Box
+565 280 Box
+565 280 Box
+565 280 Box
+566 280 Box
+566 280 Box
+566 280 Box
+567 280 Box
+567 280 Box
+567 280 Box
+568 280 Box
+568 280 Box
+569 280 Box
+569 280 Box
+569 280 Box
+570 280 Box
+570 280 Box
+570 280 Box
+571 280 Box
+571 280 Box
+572 280 Box
+572 280 Box
+573 280 Box
+573 280 Box
+573 280 Box
+574 280 Box
+574 280 Box
+575 280 Box
+575 280 Box
+576 280 Box
+576 280 Box
+577 280 Box
+577 280 Box
+578 280 Box
+578 280 Box
+579 280 Box
+579 280 Box
+580 280 Box
+580 280 Box
+581 280 Box
+582 280 Box
+582 280 Box
+583 280 Box
+583 280 Box
+584 280 Box
+585 280 Box
+585 280 Box
+586 280 Box
+587 280 Box
+587 280 Box
+588 280 Box
+589 280 Box
+589 280 Box
+590 280 Box
+591 280 Box
+591 280 Box
+592 280 Box
+593 280 Box
+594 280 Box
+594 280 Box
+595 280 Box
+596 280 Box
+597 280 Box
+598 280 Box
+599 280 Box
+599 280 Box
+600 280 Box
+601 280 Box
+602 280 Box
+603 280 Box
+604 280 Box
+605 280 Box
+606 280 Box
+607 280 Box
+608 280 Box
+609 280 Box
+610 280 Box
+611 280 Box
+612 280 Box
+613 280 Box
+614 280 Box
+615 280 Box
+616 280 Box
+618 280 Box
+619 280 Box
+620 280 Box
+621 280 Box
+622 280 Box
+624 280 Box
+625 280 Box
+626 280 Box
+627 280 Box
+629 280 Box
+630 280 Box
+632 280 Box
+633 280 Box
+634 280 Box
+636 280 Box
+637 280 Box
+639 280 Box
+640 280 Box
+642 280 Box
+643 280 Box
+645 280 Box
+647 280 Box
+648 280 Box
+650 280 Box
+652 280 Box
+653 280 Box
+655 280 Box
+657 281 Box
+659 281 Box
+661 281 Box
+663 281 Box
+664 281 Box
+666 281 Box
+668 281 Box
+670 281 Box
+672 281 Box
+674 281 Box
+677 281 Box
+679 282 Box
+681 282 Box
+683 282 Box
+685 282 Box
+688 282 Box
+690 282 Box
+692 283 Box
+695 283 Box
+697 283 Box
+700 284 Box
+702 284 Box
+705 284 Box
+707 285 Box
+710 285 Box
+713 286 Box
+715 286 Box
+718 287 Box
+721 287 Box
+724 288 Box
+727 289 Box
+730 289 Box
+733 290 Box
+736 291 Box
+739 292 Box
+742 293 Box
+745 295 Box
+748 296 Box
+752 297 Box
+755 299 Box
+759 300 Box
+762 302 Box
+766 304 Box
+769 306 Box
+773 308 Box
+777 310 Box
+780 313 Box
+784 315 Box
+788 318 Box
+792 321 Box
+796 325 Box
+800 328 Box
+804 332 Box
+809 336 Box
+813 340 Box
+817 345 Box
+822 350 Box
+826 355 Box
+831 360 Box
+835 366 Box
+840 372 Box
+845 379 Box
+850 386 Box
+855 394 Box
+860 402 Box
+865 410 Box
+870 419 Box
+876 428 Box
+881 438 Box
+887 448 Box
+892 459 Box
+898 471 Box
+904 483 Box
+909 496 Box
+915 509 Box
+921 523 Box
+928 538 Box
+934 553 Box
+940 569 Box
+947 585 Box
+953 603 Box
+960 621 Box
+967 640 Box
+974 659 Box
+981 679 Box
+988 700 Box
+995 722 Box
+1002 744 Box
+1010 767 Box
+1017 791 Box
+1025 815 Box
+1033 840 Box
+1041 866 Box
+1049 892 Box
+1057 919 Box
+1066 947 Box
+1074 975 Box
+1083 1004 Box
+1092 1033 Box
+1101 1062 Box
+1110 1092 Box
+1119 1123 Box
+1128 1153 Box
+1138 1184 Box
+1147 1215 Box
+1157 1246 Box
+1167 1277 Box
+1178 1308 Box
+1188 1339 Box
+1198 1370 Box
+1209 1401 Box
+1220 1431 Box
+1231 1461 Box
+1242 1490 Box
+1254 1519 Box
+1265 1548 Box
+1277 1576 Box
+1289 1603 Box
+1301 1629 Box
+1314 1654 Box
+1326 1678 Box
+1339 1701 Box
+1352 1723 Box
+1365 1744 Box
+1378 1764 Box
+1392 1782 Box
+1406 1799 Box
+1420 1815 Box
+1434 1829 Box
+1449 1841 Box
+1464 1852 Box
+1479 1862 Box
+1494 1870 Box
+1510 1876 Box
+1525 1881 Box
+1541 1884 Box
+1558 1885 Box
+1574 1885 Box
+1591 1883 Box
+1608 1880 Box
+1626 1875 Box
+1643 1868 Box
+1661 1860 Box
+1680 1850 Box
+1698 1839 Box
+1717 1826 Box
+1736 1812 Box
+1756 1797 Box
+1776 1780 Box
+1796 1762 Box
+1816 1743 Box
+1837 1723 Box
+1858 1702 Box
+1880 1679 Box
+1902 1656 Box
+1924 1632 Box
+1946 1607 Box
+1969 1581 Box
+1993 1555 Box
+2016 1528 Box
+2040 1500 Box
+2065 1472 Box
+2090 1443 Box
+2115 1415 Box
+2141 1385 Box
+2167 1356 Box
+2193 1326 Box
+2220 1297 Box
+2248 1267 Box
+2276 1237 Box
+2304 1207 Box
+2333 1178 Box
+2362 1148 Box
+2392 1119 Box
+2422 1090 Box
+2453 1061 Box
+2484 1033 Box
+2516 1005 Box
+2548 977 Box
+2581 950 Box
+2614 923 Box
+2648 897 Box
+2683 872 Box
+2718 846 Box
+2753 822 Box
+2789 798 Box
+2826 774 Box
+2864 751 Box
+2902 729 Box
+2940 708 Box
+2979 687 Box
+3019 666 Box
+3060 647 Box
+3101 628 Box
+3143 609 Box
+3185 592 Box
+3229 575 Box
+3273 558 Box
+3317 542 Box
+3363 527 Box
+3409 513 Box
+3456 499 Box
+3503 485 Box
+3552 473 Box
+3601 460 Box
+3651 449 Box
+3702 438 Box
+3754 427 Box
+3806 417 Box
+3860 408 Box
+3914 399 Box
+3969 390 Box
+4025 382 Box
+4082 375 Box
+4140 368 Box
+4199 361 Box
+4259 355 Box
+4320 349 Box
+4382 343 Box
+4444 338 Box
+4508 333 Box
+4573 329 Box
+4639 325 Box
+4706 321 Box
+4774 317 Box
+4844 314 Box
+4914 310 Box
+4986 308 Box
+5058 305 Box
+5132 303 Box
+5207 300 Box
+5284 298 Box
+5361 296 Box
+5440 295 Box
+5521 293 Box
+5602 292 Box
+5685 290 Box
+5769 289 Box
+5855 288 Box
+5942 287 Box
+6030 286 Box
+6120 286 Box
+6211 285 Box
+6304 284 Box
+6398 284 Box
+6579 4318 Box
+% End plot #4
+% Begin plot #5
+1.000 UP
+1.000 UL
+LTb
+0.94 0.89 0.26 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4178 M
+("Dy3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.94 0.89 0.26 C 546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+546 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+547 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+548 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+549 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+550 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+551 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+552 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+553 280 BoxF
+554 280 BoxF
+554 280 BoxF
+554 280 BoxF
+554 280 BoxF
+554 280 BoxF
+554 280 BoxF
+554 280 BoxF
+555 280 BoxF
+555 280 BoxF
+555 280 BoxF
+555 280 BoxF
+555 280 BoxF
+555 280 BoxF
+555 280 BoxF
+556 280 BoxF
+556 280 BoxF
+556 280 BoxF
+556 280 BoxF
+556 280 BoxF
+556 280 BoxF
+557 280 BoxF
+557 280 BoxF
+557 280 BoxF
+557 280 BoxF
+557 280 BoxF
+557 280 BoxF
+558 280 BoxF
+558 280 BoxF
+558 280 BoxF
+558 280 BoxF
+558 280 BoxF
+559 280 BoxF
+559 280 BoxF
+559 280 BoxF
+559 280 BoxF
+559 280 BoxF
+560 280 BoxF
+560 280 BoxF
+560 280 BoxF
+560 280 BoxF
+561 280 BoxF
+561 280 BoxF
+561 280 BoxF
+561 280 BoxF
+562 280 BoxF
+562 280 BoxF
+562 280 BoxF
+562 280 BoxF
+563 280 BoxF
+563 280 BoxF
+563 280 BoxF
+563 280 BoxF
+564 280 BoxF
+564 280 BoxF
+564 280 BoxF
+565 280 BoxF
+565 280 BoxF
+565 280 BoxF
+565 280 BoxF
+566 280 BoxF
+566 280 BoxF
+566 280 BoxF
+567 280 BoxF
+567 280 BoxF
+567 280 BoxF
+568 280 BoxF
+568 280 BoxF
+569 280 BoxF
+569 280 BoxF
+569 280 BoxF
+570 280 BoxF
+570 280 BoxF
+570 280 BoxF
+571 280 BoxF
+571 280 BoxF
+572 280 BoxF
+572 280 BoxF
+573 280 BoxF
+573 280 BoxF
+573 280 BoxF
+574 280 BoxF
+574 280 BoxF
+575 280 BoxF
+575 280 BoxF
+576 280 BoxF
+576 280 BoxF
+577 280 BoxF
+577 280 BoxF
+578 280 BoxF
+578 280 BoxF
+579 280 BoxF
+579 280 BoxF
+580 280 BoxF
+580 280 BoxF
+581 280 BoxF
+582 280 BoxF
+582 280 BoxF
+583 280 BoxF
+583 280 BoxF
+584 280 BoxF
+585 280 BoxF
+585 280 BoxF
+586 280 BoxF
+587 280 BoxF
+587 280 BoxF
+588 280 BoxF
+589 280 BoxF
+589 280 BoxF
+590 280 BoxF
+591 280 BoxF
+591 280 BoxF
+592 280 BoxF
+593 280 BoxF
+594 280 BoxF
+594 280 BoxF
+595 280 BoxF
+596 280 BoxF
+597 280 BoxF
+598 280 BoxF
+599 280 BoxF
+599 280 BoxF
+600 280 BoxF
+601 280 BoxF
+602 280 BoxF
+603 280 BoxF
+604 280 BoxF
+605 280 BoxF
+606 280 BoxF
+607 280 BoxF
+608 280 BoxF
+609 280 BoxF
+610 280 BoxF
+611 280 BoxF
+612 280 BoxF
+613 280 BoxF
+614 280 BoxF
+615 280 BoxF
+616 280 BoxF
+618 280 BoxF
+619 280 BoxF
+620 280 BoxF
+621 280 BoxF
+622 280 BoxF
+624 280 BoxF
+625 280 BoxF
+626 280 BoxF
+627 280 BoxF
+629 280 BoxF
+630 280 BoxF
+632 280 BoxF
+633 280 BoxF
+634 280 BoxF
+636 280 BoxF
+637 280 BoxF
+639 280 BoxF
+640 280 BoxF
+642 280 BoxF
+643 280 BoxF
+645 280 BoxF
+647 280 BoxF
+648 280 BoxF
+650 280 BoxF
+652 281 BoxF
+653 281 BoxF
+655 281 BoxF
+657 281 BoxF
+659 281 BoxF
+661 281 BoxF
+663 281 BoxF
+664 281 BoxF
+666 281 BoxF
+668 281 BoxF
+670 281 BoxF
+672 282 BoxF
+674 282 BoxF
+677 282 BoxF
+679 282 BoxF
+681 282 BoxF
+683 282 BoxF
+685 283 BoxF
+688 283 BoxF
+690 283 BoxF
+692 284 BoxF
+695 284 BoxF
+697 284 BoxF
+700 285 BoxF
+702 285 BoxF
+705 286 BoxF
+707 286 BoxF
+710 287 BoxF
+713 287 BoxF
+715 288 BoxF
+718 289 BoxF
+721 289 BoxF
+724 290 BoxF
+727 291 BoxF
+730 292 BoxF
+733 293 BoxF
+736 294 BoxF
+739 296 BoxF
+742 297 BoxF
+745 298 BoxF
+748 300 BoxF
+752 302 BoxF
+755 304 BoxF
+759 306 BoxF
+762 308 BoxF
+766 310 BoxF
+769 312 BoxF
+773 315 BoxF
+777 318 BoxF
+780 321 BoxF
+784 324 BoxF
+788 328 BoxF
+792 332 BoxF
+796 336 BoxF
+800 340 BoxF
+804 344 BoxF
+809 349 BoxF
+813 354 BoxF
+817 360 BoxF
+822 366 BoxF
+826 372 BoxF
+831 379 BoxF
+835 386 BoxF
+840 393 BoxF
+845 401 BoxF
+850 410 BoxF
+855 419 BoxF
+860 428 BoxF
+865 438 BoxF
+870 449 BoxF
+876 460 BoxF
+881 471 BoxF
+887 483 BoxF
+892 496 BoxF
+898 510 BoxF
+904 524 BoxF
+909 538 BoxF
+915 554 BoxF
+921 570 BoxF
+928 587 BoxF
+934 604 BoxF
+940 623 BoxF
+947 642 BoxF
+953 661 BoxF
+960 682 BoxF
+967 703 BoxF
+974 725 BoxF
+981 748 BoxF
+988 771 BoxF
+995 795 BoxF
+1002 820 BoxF
+1010 846 BoxF
+1017 872 BoxF
+1025 899 BoxF
+1033 927 BoxF
+1041 955 BoxF
+1049 983 BoxF
+1057 1013 BoxF
+1066 1042 BoxF
+1074 1073 BoxF
+1083 1103 BoxF
+1092 1134 BoxF
+1101 1165 BoxF
+1110 1197 BoxF
+1119 1229 BoxF
+1128 1261 BoxF
+1138 1293 BoxF
+1147 1325 BoxF
+1157 1357 BoxF
+1167 1388 BoxF
+1178 1420 BoxF
+1188 1451 BoxF
+1198 1482 BoxF
+1209 1513 BoxF
+1220 1542 BoxF
+1231 1572 BoxF
+1242 1600 BoxF
+1254 1628 BoxF
+1265 1655 BoxF
+1277 1682 BoxF
+1289 1707 BoxF
+1301 1731 BoxF
+1314 1754 BoxF
+1326 1776 BoxF
+1339 1796 BoxF
+1352 1815 BoxF
+1365 1833 BoxF
+1378 1849 BoxF
+1392 1864 BoxF
+1406 1878 BoxF
+1420 1889 BoxF
+1434 1900 BoxF
+1449 1908 BoxF
+1464 1915 BoxF
+1479 1920 BoxF
+1494 1924 BoxF
+1510 1926 BoxF
+1525 1926 BoxF
+1541 1924 BoxF
+1558 1921 BoxF
+1574 1916 BoxF
+1591 1910 BoxF
+1608 1902 BoxF
+1626 1892 BoxF
+1643 1881 BoxF
+1661 1869 BoxF
+1680 1855 BoxF
+1698 1839 BoxF
+1717 1822 BoxF
+1736 1804 BoxF
+1756 1785 BoxF
+1776 1764 BoxF
+1796 1743 BoxF
+1816 1720 BoxF
+1837 1697 BoxF
+1858 1672 BoxF
+1880 1647 BoxF
+1902 1620 BoxF
+1924 1594 BoxF
+1946 1566 BoxF
+1969 1538 BoxF
+1993 1509 BoxF
+2016 1480 BoxF
+2040 1451 BoxF
+2065 1421 BoxF
+2090 1391 BoxF
+2115 1361 BoxF
+2141 1330 BoxF
+2167 1300 BoxF
+2193 1270 BoxF
+2220 1239 BoxF
+2248 1209 BoxF
+2276 1179 BoxF
+2304 1149 BoxF
+2333 1119 BoxF
+2362 1090 BoxF
+2392 1061 BoxF
+2422 1032 BoxF
+2453 1004 BoxF
+2484 976 BoxF
+2516 949 BoxF
+2548 922 BoxF
+2581 896 BoxF
+2614 870 BoxF
+2648 844 BoxF
+2683 820 BoxF
+2718 796 BoxF
+2753 772 BoxF
+2789 749 BoxF
+2826 727 BoxF
+2864 706 BoxF
+2902 685 BoxF
+2940 665 BoxF
+2979 645 BoxF
+3019 626 BoxF
+3060 608 BoxF
+3101 590 BoxF
+3143 573 BoxF
+3185 557 BoxF
+3229 541 BoxF
+3273 526 BoxF
+3317 512 BoxF
+3363 498 BoxF
+3409 485 BoxF
+3456 472 BoxF
+3503 460 BoxF
+3552 448 BoxF
+3601 437 BoxF
+3651 427 BoxF
+3702 417 BoxF
+3754 408 BoxF
+3806 399 BoxF
+3860 390 BoxF
+3914 382 BoxF
+3969 375 BoxF
+4025 368 BoxF
+4082 361 BoxF
+4140 355 BoxF
+4199 349 BoxF
+4259 344 BoxF
+4320 338 BoxF
+4382 334 BoxF
+4444 329 BoxF
+4508 325 BoxF
+4573 321 BoxF
+4639 317 BoxF
+4706 314 BoxF
+4774 311 BoxF
+4844 308 BoxF
+4914 305 BoxF
+4986 303 BoxF
+5058 301 BoxF
+5132 299 BoxF
+5207 297 BoxF
+5284 295 BoxF
+5361 293 BoxF
+5440 292 BoxF
+5521 291 BoxF
+5602 289 BoxF
+5685 288 BoxF
+5769 287 BoxF
+5855 286 BoxF
+5942 286 BoxF
+6030 285 BoxF
+6120 284 BoxF
+6211 284 BoxF
+6304 283 BoxF
+6398 283 BoxF
+6579 4178 BoxF
+% End plot #5
+% Begin plot #6
+1.000 UP
+1.000 UL
+LTb
+0.00 0.45 0.70 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 4038 M
+("Ho3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.00 0.45 0.70 C 546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+546 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+547 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+548 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+549 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+550 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+551 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+552 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+553 280 Circle
+554 280 Circle
+554 280 Circle
+554 280 Circle
+554 280 Circle
+554 280 Circle
+554 280 Circle
+554 280 Circle
+555 280 Circle
+555 280 Circle
+555 280 Circle
+555 280 Circle
+555 280 Circle
+555 280 Circle
+555 280 Circle
+556 280 Circle
+556 280 Circle
+556 280 Circle
+556 280 Circle
+556 280 Circle
+556 280 Circle
+557 280 Circle
+557 280 Circle
+557 280 Circle
+557 280 Circle
+557 280 Circle
+557 280 Circle
+558 280 Circle
+558 280 Circle
+558 280 Circle
+558 280 Circle
+558 280 Circle
+559 280 Circle
+559 280 Circle
+559 280 Circle
+559 280 Circle
+559 280 Circle
+560 280 Circle
+560 280 Circle
+560 280 Circle
+560 280 Circle
+561 280 Circle
+561 280 Circle
+561 280 Circle
+561 280 Circle
+562 280 Circle
+562 280 Circle
+562 280 Circle
+562 280 Circle
+563 280 Circle
+563 280 Circle
+563 280 Circle
+563 280 Circle
+564 280 Circle
+564 280 Circle
+564 280 Circle
+565 280 Circle
+565 280 Circle
+565 280 Circle
+565 280 Circle
+566 280 Circle
+566 280 Circle
+566 280 Circle
+567 280 Circle
+567 280 Circle
+567 280 Circle
+568 280 Circle
+568 280 Circle
+569 280 Circle
+569 280 Circle
+569 280 Circle
+570 280 Circle
+570 280 Circle
+570 280 Circle
+571 280 Circle
+571 280 Circle
+572 280 Circle
+572 280 Circle
+573 280 Circle
+573 280 Circle
+573 280 Circle
+574 280 Circle
+574 280 Circle
+575 280 Circle
+575 280 Circle
+576 280 Circle
+576 280 Circle
+577 280 Circle
+577 280 Circle
+578 280 Circle
+578 280 Circle
+579 280 Circle
+579 280 Circle
+580 280 Circle
+580 280 Circle
+581 280 Circle
+582 280 Circle
+582 280 Circle
+583 280 Circle
+583 280 Circle
+584 280 Circle
+585 280 Circle
+585 280 Circle
+586 280 Circle
+587 280 Circle
+587 280 Circle
+588 280 Circle
+589 280 Circle
+589 280 Circle
+590 280 Circle
+591 280 Circle
+591 280 Circle
+592 280 Circle
+593 280 Circle
+594 280 Circle
+594 280 Circle
+595 280 Circle
+596 280 Circle
+597 280 Circle
+598 280 Circle
+599 280 Circle
+599 280 Circle
+600 280 Circle
+601 280 Circle
+602 280 Circle
+603 280 Circle
+604 280 Circle
+605 280 Circle
+606 280 Circle
+607 280 Circle
+608 280 Circle
+609 280 Circle
+610 280 Circle
+611 280 Circle
+612 280 Circle
+613 280 Circle
+614 280 Circle
+615 280 Circle
+616 280 Circle
+618 280 Circle
+619 280 Circle
+620 280 Circle
+621 280 Circle
+622 280 Circle
+624 280 Circle
+625 280 Circle
+626 280 Circle
+627 280 Circle
+629 280 Circle
+630 280 Circle
+632 280 Circle
+633 280 Circle
+634 280 Circle
+636 280 Circle
+637 280 Circle
+639 280 Circle
+640 280 Circle
+642 280 Circle
+643 280 Circle
+645 280 Circle
+647 280 Circle
+648 281 Circle
+650 281 Circle
+652 281 Circle
+653 281 Circle
+655 281 Circle
+657 281 Circle
+659 281 Circle
+661 281 Circle
+663 281 Circle
+664 281 Circle
+666 281 Circle
+668 282 Circle
+670 282 Circle
+672 282 Circle
+674 282 Circle
+677 282 Circle
+679 282 Circle
+681 283 Circle
+683 283 Circle
+685 283 Circle
+688 283 Circle
+690 284 Circle
+692 284 Circle
+695 285 Circle
+697 285 Circle
+700 285 Circle
+702 286 Circle
+705 287 Circle
+707 287 Circle
+710 288 Circle
+713 288 Circle
+715 289 Circle
+718 290 Circle
+721 291 Circle
+724 292 Circle
+727 293 Circle
+730 294 Circle
+733 295 Circle
+736 297 Circle
+739 298 Circle
+742 300 Circle
+745 302 Circle
+748 303 Circle
+752 305 Circle
+755 308 Circle
+759 310 Circle
+762 312 Circle
+766 315 Circle
+769 318 Circle
+773 321 Circle
+777 324 Circle
+780 328 Circle
+784 331 Circle
+788 335 Circle
+792 340 Circle
+796 344 Circle
+800 349 Circle
+804 354 Circle
+809 360 Circle
+813 366 Circle
+817 372 Circle
+822 379 Circle
+826 386 Circle
+831 394 Circle
+835 402 Circle
+840 410 Circle
+845 419 Circle
+850 429 Circle
+855 439 Circle
+860 449 Circle
+865 460 Circle
+870 472 Circle
+876 485 Circle
+881 497 Circle
+887 511 Circle
+892 525 Circle
+898 540 Circle
+904 556 Circle
+909 573 Circle
+915 590 Circle
+921 607 Circle
+928 626 Circle
+934 645 Circle
+940 666 Circle
+947 686 Circle
+953 708 Circle
+960 731 Circle
+967 754 Circle
+974 778 Circle
+981 802 Circle
+988 828 Circle
+995 854 Circle
+1002 881 Circle
+1010 909 Circle
+1017 937 Circle
+1025 966 Circle
+1033 995 Circle
+1041 1025 Circle
+1049 1056 Circle
+1057 1087 Circle
+1066 1119 Circle
+1074 1151 Circle
+1083 1183 Circle
+1092 1215 Circle
+1101 1248 Circle
+1110 1281 Circle
+1119 1314 Circle
+1128 1347 Circle
+1138 1380 Circle
+1147 1413 Circle
+1157 1446 Circle
+1167 1479 Circle
+1178 1511 Circle
+1188 1543 Circle
+1198 1574 Circle
+1209 1604 Circle
+1220 1634 Circle
+1231 1663 Circle
+1242 1692 Circle
+1254 1719 Circle
+1265 1745 Circle
+1277 1771 Circle
+1289 1795 Circle
+1301 1818 Circle
+1314 1839 Circle
+1326 1860 Circle
+1339 1878 Circle
+1352 1896 Circle
+1365 1912 Circle
+1378 1926 Circle
+1392 1938 Circle
+1406 1949 Circle
+1420 1959 Circle
+1434 1966 Circle
+1449 1972 Circle
+1464 1976 Circle
+1479 1978 Circle
+1494 1979 Circle
+1510 1978 Circle
+1525 1975 Circle
+1541 1970 Circle
+1558 1964 Circle
+1574 1956 Circle
+1591 1947 Circle
+1608 1935 Circle
+1626 1923 Circle
+1643 1908 Circle
+1661 1893 Circle
+1680 1876 Circle
+1698 1857 Circle
+1717 1837 Circle
+1736 1816 Circle
+1756 1794 Circle
+1776 1771 Circle
+1796 1747 Circle
+1816 1721 Circle
+1837 1695 Circle
+1858 1668 Circle
+1880 1641 Circle
+1902 1612 Circle
+1924 1583 Circle
+1946 1554 Circle
+1969 1523 Circle
+1993 1493 Circle
+2016 1462 Circle
+2040 1431 Circle
+2065 1400 Circle
+2090 1369 Circle
+2115 1337 Circle
+2141 1306 Circle
+2167 1274 Circle
+2193 1243 Circle
+2220 1212 Circle
+2248 1181 Circle
+2276 1150 Circle
+2304 1120 Circle
+2333 1089 Circle
+2362 1060 Circle
+2392 1030 Circle
+2422 1002 Circle
+2453 973 Circle
+2484 945 Circle
+2516 918 Circle
+2548 891 Circle
+2581 865 Circle
+2614 839 Circle
+2648 815 Circle
+2683 790 Circle
+2718 767 Circle
+2753 744 Circle
+2789 721 Circle
+2826 700 Circle
+2864 679 Circle
+2902 658 Circle
+2940 639 Circle
+2979 620 Circle
+3019 601 Circle
+3060 584 Circle
+3101 567 Circle
+3143 551 Circle
+3185 535 Circle
+3229 520 Circle
+3273 506 Circle
+3317 492 Circle
+3363 479 Circle
+3409 467 Circle
+3456 455 Circle
+3503 443 Circle
+3552 433 Circle
+3601 422 Circle
+3651 413 Circle
+3702 403 Circle
+3754 395 Circle
+3806 387 Circle
+3860 379 Circle
+3914 371 Circle
+3969 365 Circle
+4025 358 Circle
+4082 352 Circle
+4140 346 Circle
+4199 341 Circle
+4259 336 Circle
+4320 331 Circle
+4382 327 Circle
+4444 323 Circle
+4508 319 Circle
+4573 316 Circle
+4639 312 Circle
+4706 309 Circle
+4774 307 Circle
+4844 304 Circle
+4914 302 Circle
+4986 300 Circle
+5058 298 Circle
+5132 296 Circle
+5207 294 Circle
+5284 293 Circle
+5361 291 Circle
+5440 290 Circle
+5521 289 Circle
+5602 288 Circle
+5685 287 Circle
+5769 286 Circle
+5855 285 Circle
+5942 285 Circle
+6030 284 Circle
+6120 284 Circle
+6211 283 Circle
+6304 283 Circle
+6398 282 Circle
+6579 4038 Circle
+% End plot #6
+% Begin plot #7
+1.000 UP
+1.000 UL
+LTb
+0.90 0.12 0.06 C /Helvetica findfont 140 scalefont setfont
+LCb setrgbcolor
+6296 3898 M
+("Tm3.2_R4f.dat") Rshow
+1.000 UP
+1.000 UL
+LTb
+0.90 0.12 0.06 C 546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+546 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+547 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+548 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+549 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+550 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+551 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+552 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+553 280 CircleF
+554 280 CircleF
+554 280 CircleF
+554 280 CircleF
+554 280 CircleF
+554 280 CircleF
+554 280 CircleF
+554 280 CircleF
+555 280 CircleF
+555 280 CircleF
+555 280 CircleF
+555 280 CircleF
+555 280 CircleF
+555 280 CircleF
+555 280 CircleF
+556 280 CircleF
+556 280 CircleF
+556 280 CircleF
+556 280 CircleF
+556 280 CircleF
+556 280 CircleF
+557 280 CircleF
+557 280 CircleF
+557 280 CircleF
+557 280 CircleF
+557 280 CircleF
+557 280 CircleF
+558 280 CircleF
+558 280 CircleF
+558 280 CircleF
+558 280 CircleF
+558 280 CircleF
+559 280 CircleF
+559 280 CircleF
+559 280 CircleF
+559 280 CircleF
+559 280 CircleF
+560 280 CircleF
+560 280 CircleF
+560 280 CircleF
+560 280 CircleF
+561 280 CircleF
+561 280 CircleF
+561 280 CircleF
+561 280 CircleF
+562 280 CircleF
+562 280 CircleF
+562 280 CircleF
+562 280 CircleF
+563 280 CircleF
+563 280 CircleF
+563 280 CircleF
+563 280 CircleF
+564 280 CircleF
+564 280 CircleF
+564 280 CircleF
+565 280 CircleF
+565 280 CircleF
+565 280 CircleF
+565 280 CircleF
+566 280 CircleF
+566 280 CircleF
+566 280 CircleF
+567 280 CircleF
+567 280 CircleF
+567 280 CircleF
+568 280 CircleF
+568 280 CircleF
+569 280 CircleF
+569 280 CircleF
+569 280 CircleF
+570 280 CircleF
+570 280 CircleF
+570 280 CircleF
+571 280 CircleF
+571 280 CircleF
+572 280 CircleF
+572 280 CircleF
+573 280 CircleF
+573 280 CircleF
+573 280 CircleF
+574 280 CircleF
+574 280 CircleF
+575 280 CircleF
+575 280 CircleF
+576 280 CircleF
+576 280 CircleF
+577 280 CircleF
+577 280 CircleF
+578 280 CircleF
+578 280 CircleF
+579 280 CircleF
+579 280 CircleF
+580 280 CircleF
+580 280 CircleF
+581 280 CircleF
+582 280 CircleF
+582 280 CircleF
+583 280 CircleF
+583 280 CircleF
+584 280 CircleF
+585 280 CircleF
+585 280 CircleF
+586 280 CircleF
+587 280 CircleF
+587 280 CircleF
+588 280 CircleF
+589 280 CircleF
+589 280 CircleF
+590 280 CircleF
+591 280 CircleF
+591 280 CircleF
+592 280 CircleF
+593 280 CircleF
+594 280 CircleF
+594 280 CircleF
+595 280 CircleF
+596 280 CircleF
+597 280 CircleF
+598 280 CircleF
+599 280 CircleF
+599 280 CircleF
+600 280 CircleF
+601 280 CircleF
+602 280 CircleF
+603 280 CircleF
+604 280 CircleF
+605 280 CircleF
+606 280 CircleF
+607 280 CircleF
+608 280 CircleF
+609 280 CircleF
+610 280 CircleF
+611 280 CircleF
+612 280 CircleF
+613 280 CircleF
+614 280 CircleF
+615 280 CircleF
+616 280 CircleF
+618 280 CircleF
+619 280 CircleF
+620 280 CircleF
+621 280 CircleF
+622 280 CircleF
+624 280 CircleF
+625 280 CircleF
+626 280 CircleF
+627 280 CircleF
+629 280 CircleF
+630 280 CircleF
+632 280 CircleF
+633 280 CircleF
+634 280 CircleF
+636 280 CircleF
+637 280 CircleF
+639 280 CircleF
+640 280 CircleF
+642 281 CircleF
+643 281 CircleF
+645 281 CircleF
+647 281 CircleF
+648 281 CircleF
+650 281 CircleF
+652 281 CircleF
+653 281 CircleF
+655 281 CircleF
+657 281 CircleF
+659 281 CircleF
+661 282 CircleF
+663 282 CircleF
+664 282 CircleF
+666 282 CircleF
+668 282 CircleF
+670 282 CircleF
+672 283 CircleF
+674 283 CircleF
+677 283 CircleF
+679 284 CircleF
+681 284 CircleF
+683 284 CircleF
+685 285 CircleF
+688 285 CircleF
+690 286 CircleF
+692 286 CircleF
+695 287 CircleF
+697 287 CircleF
+700 288 CircleF
+702 289 CircleF
+705 290 CircleF
+707 290 CircleF
+710 291 CircleF
+713 292 CircleF
+715 294 CircleF
+718 295 CircleF
+721 296 CircleF
+724 297 CircleF
+727 299 CircleF
+730 301 CircleF
+733 302 CircleF
+736 304 CircleF
+739 306 CircleF
+742 309 CircleF
+745 311 CircleF
+748 314 CircleF
+752 316 CircleF
+755 319 CircleF
+759 323 CircleF
+762 326 CircleF
+766 330 CircleF
+769 334 CircleF
+773 338 CircleF
+777 343 CircleF
+780 348 CircleF
+784 353 CircleF
+788 358 CircleF
+792 364 CircleF
+796 371 CircleF
+800 377 CircleF
+804 384 CircleF
+809 392 CircleF
+813 400 CircleF
+817 409 CircleF
+822 418 CircleF
+826 428 CircleF
+831 438 CircleF
+835 449 CircleF
+840 460 CircleF
+845 472 CircleF
+850 485 CircleF
+855 498 CircleF
+860 512 CircleF
+865 527 CircleF
+870 543 CircleF
+876 559 CircleF
+881 576 CircleF
+887 594 CircleF
+892 613 CircleF
+898 632 CircleF
+904 652 CircleF
+909 674 CircleF
+915 696 CircleF
+921 719 CircleF
+928 742 CircleF
+934 767 CircleF
+940 793 CircleF
+947 819 CircleF
+953 847 CircleF
+960 875 CircleF
+967 904 CircleF
+974 934 CircleF
+981 964 CircleF
+988 996 CircleF
+995 1028 CircleF
+1002 1061 CircleF
+1010 1094 CircleF
+1017 1129 CircleF
+1025 1164 CircleF
+1033 1199 CircleF
+1041 1235 CircleF
+1049 1271 CircleF
+1057 1308 CircleF
+1066 1345 CircleF
+1074 1382 CircleF
+1083 1420 CircleF
+1092 1457 CircleF
+1101 1495 CircleF
+1110 1532 CircleF
+1119 1569 CircleF
+1128 1606 CircleF
+1138 1643 CircleF
+1147 1679 CircleF
+1157 1715 CircleF
+1167 1750 CircleF
+1178 1784 CircleF
+1188 1817 CircleF
+1198 1850 CircleF
+1209 1881 CircleF
+1220 1912 CircleF
+1231 1941 CircleF
+1242 1969 CircleF
+1254 1995 CircleF
+1265 2020 CircleF
+1277 2044 CircleF
+1289 2066 CircleF
+1301 2086 CircleF
+1314 2104 CircleF
+1326 2121 CircleF
+1339 2135 CircleF
+1352 2148 CircleF
+1365 2159 CircleF
+1378 2168 CircleF
+1392 2175 CircleF
+1406 2180 CircleF
+1420 2182 CircleF
+1434 2183 CircleF
+1449 2182 CircleF
+1464 2178 CircleF
+1479 2173 CircleF
+1494 2166 CircleF
+1510 2156 CircleF
+1525 2145 CircleF
+1541 2132 CircleF
+1558 2117 CircleF
+1574 2100 CircleF
+1591 2082 CircleF
+1608 2062 CircleF
+1626 2040 CircleF
+1643 2017 CircleF
+1661 1992 CircleF
+1680 1966 CircleF
+1698 1938 CircleF
+1717 1910 CircleF
+1736 1880 CircleF
+1756 1849 CircleF
+1776 1817 CircleF
+1796 1785 CircleF
+1816 1751 CircleF
+1837 1717 CircleF
+1858 1682 CircleF
+1880 1647 CircleF
+1902 1611 CircleF
+1924 1575 CircleF
+1946 1538 CircleF
+1969 1502 CircleF
+1993 1465 CircleF
+2016 1428 CircleF
+2040 1391 CircleF
+2065 1354 CircleF
+2090 1318 CircleF
+2115 1281 CircleF
+2141 1245 CircleF
+2167 1210 CircleF
+2193 1174 CircleF
+2220 1139 CircleF
+2248 1105 CircleF
+2276 1071 CircleF
+2304 1038 CircleF
+2333 1005 CircleF
+2362 973 CircleF
+2392 942 CircleF
+2422 911 CircleF
+2453 882 CircleF
+2484 853 CircleF
+2516 824 CircleF
+2548 797 CircleF
+2581 770 CircleF
+2614 745 CircleF
+2648 720 CircleF
+2683 696 CircleF
+2718 673 CircleF
+2753 650 CircleF
+2789 629 CircleF
+2826 608 CircleF
+2864 588 CircleF
+2902 569 CircleF
+2940 551 CircleF
+2979 534 CircleF
+3019 517 CircleF
+3060 502 CircleF
+3101 487 CircleF
+3143 473 CircleF
+3185 459 CircleF
+3229 446 CircleF
+3273 434 CircleF
+3317 423 CircleF
+3363 412 CircleF
+3409 402 CircleF
+3456 392 CircleF
+3503 384 CircleF
+3552 375 CircleF
+3601 367 CircleF
+3651 360 CircleF
+3702 353 CircleF
+3754 347 CircleF
+3806 341 CircleF
+3860 335 CircleF
+3914 330 CircleF
+3969 326 CircleF
+4025 321 CircleF
+4082 317 CircleF
+4140 314 CircleF
+4199 310 CircleF
+4259 307 CircleF
+4320 304 CircleF
+4382 302 CircleF
+4444 299 CircleF
+4508 297 CircleF
+4573 295 CircleF
+4639 294 CircleF
+4706 292 CircleF
+4774 291 CircleF
+4844 289 CircleF
+4914 288 CircleF
+4986 287 CircleF
+5058 286 CircleF
+5132 285 CircleF
+5207 285 CircleF
+5284 284 CircleF
+5361 284 CircleF
+5440 283 CircleF
+5521 283 CircleF
+5602 282 CircleF
+5685 282 CircleF
+5769 282 CircleF
+5855 281 CircleF
+5942 281 CircleF
+6030 281 CircleF
+6120 281 CircleF
+6211 281 CircleF
+6304 281 CircleF
+6398 280 CircleF
+6579 3898 CircleF
+% End plot #7
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4871 N
+546 280 L
+6401 0 V
+0 4591 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

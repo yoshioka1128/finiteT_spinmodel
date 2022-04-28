@@ -1,0 +1,22 @@
+Sm 2 Fe 24 system
+1			! mutiplicity in single unitcell
+8.56355d0 8.56355d0 4.79810d0 90.0d0	! aleng, bleng, cleng, angle: lattice constants (angstrom)
+350.0d0 \lambda (K)
+44.43223d0 555.0d0 1.01d0 2.5d0 ! Ms per nfe, Tc, s, p: paramters for Kuzmin PRL (2005), Ms=31.4 f.u.
+0.0d0 0.0d0 0.0d0   ! K1Fe,K2Fe,K3Fe ref. D. Miura et al. AIP ADV. 8 (2018) 075114.
+Sm 1
+302.6d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 5	! <r^l>, number of CFPs
+  -21.4186657139251                2           0
+  -60.6764391307989                4           0
+  -30.5543357570697                4           4
+   4.08452170481946                6           0
+  -2.06379461766268                6           4
+Sm 2
+302.6d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 5	! <r^l>, number of CFPs
+  -21.4186657139251                2           0
+  -60.6764391307989                4           0
+  -30.5543357570697                4           4
+   4.08452170481946                6           0
+  -2.06379461766268                6           4

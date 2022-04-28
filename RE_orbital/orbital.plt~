@@ -1,0 +1,31 @@
+set terminal postscript eps enhanced color
+
+set size 0.5,0.5
+#set key font "Times-Roman"
+set xlabel font "Times-Roman"
+set ylabel font "Times-Roman"
+set tics font "Times-Roman"
+set xlabel "r (Bohr)"
+set ylabel "r^2R_{4f}(r)"
+
+set output "orbital.eps"
+plot \
+"Ce3.2_R4f.dat" w l lw 2 title "Ce",\
+"Pr3.2_R4f.dat" w l lw 2 title "Pr",\
+"Nd3.2_R4f.dat" w l lw 2 title "Nd",\
+"Sm3.2_R4f.dat" w l lw 2 title "Sm",\
+"Tb3.2_R4f.dat" w l lw 2 title "Tb",\
+"Dy3.2_R4f.dat" w l lw 2 title "Dy",\
+"Ho3.2_R4f.dat" w l lw 2 title "Ho",\
+"Er3.2_R4f.dat" w l lw 2 title "Er",\
+"Tm3.2_R4f1.dat" w l lw 2 title "Tm",\
+"Yb3.2_R4f.dat" w l lw 2 title "Yb"
+
+set title font "Times-Roman"
+set output "orbital_Ce_chRmt.eps"
+plot \
+"Ce3.2_R4f.dat" w l lw 2 title "Rmt=3.2",\
+"Ce2.8_R4f.dat" w l lw 2 title "Rmt=2.8",\
+"Ce2.5_R4f.dat" w l lw 2 title "Rmt=2.5"
+
+reset

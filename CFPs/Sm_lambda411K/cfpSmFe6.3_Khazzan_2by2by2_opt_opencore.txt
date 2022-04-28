@@ -1,0 +1,48 @@
+Sm 6 Fe 44 system	! R nR TM nfe
+1.0d0			! mutiplicity in single unitcell (prism)
+9.54552d0 9.54552d0 8.2973d0 120.0d0       ! V=654.73658, V/6=109.1227
+411.0d0 \lambda (K)
+84.848d0 555.0d0 1.01d0 2.5d0 ! Ms/nFe, Tc, s, p: paramters for Kuzmin PRL (2005), Ms=31.4 f.u.
+0.0d0 -0.2631579d0 -0.2368421d0   ! K1Fe(0)/nFe, K2Fe/K1Fe,K3Fe/K1Fe
+Sm 1
+253.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -270.557864231420                  2           0
+  -44.6915291671956                  4           0
+   6.96307068911021                  6           0
+  -137.412703072693                  6           6
+Sm 2
+253.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -276.427854182989                  2           0
+  -44.4108431879591                  4           0
+   6.95927333502080                  6           0
+  -137.213415316787                  6           6
+Sm 3
+253.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -275.803974189186                  2           0
+  -44.4832411301402                  4           0
+   6.96182109394731                  6           0
+  -137.166437475381                  6           6
+Sm 4
+253.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -269.741364826950                  2           0
+  -44.7939996945139                  4           0
+   6.96796577802186                  6           0
+  -137.428363346663                  6           6
+Sm 5
+245.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+   62.6958351183214                  2           0
+  -6.58637889025743                  4           0
+   3.17555962757377                  6           0
+  -129.535420353226                  6           6
+Sm 6
+245.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+   62.7584869633242                  2           0
+  -6.48795105273609                  4           0
+   3.16847881719147                  6           0
+  -129.573057159642                  6           6

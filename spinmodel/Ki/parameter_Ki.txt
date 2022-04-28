@@ -1,0 +1,11 @@
+SmFe12H_lambda411	! system
+2	 		! nJex: number of excited states e.g. 0:lowestJ, 1:LowestJ+secondJ
+opencore		! method: "Yamada" or "opencore" or "Hummler"
+wK1Fe			! wK1Fe or woK1Fe
+0.0d0 800.0d0 2.0d0	! Tmin, Tmax, dT: min. max. and increment of temperature
+0.02d0			! dtheta: increment of \theta (rad)
+
+! doped sytem: SmFe12_lambda411,SmFe12H_lambda411,SmFe12B_lambda411,SmFe12C_lambda411,SmFe12N_lambda411
+! substituted sytem: SmFe11Ti_f_fullexp_lambda411,SmFe11V_f_fullexp_lambda411,SmFe11Co_f_fullexp_lambda411
+! substituted sytem: SmFe11Ti_i_fullexp_lambda411,SmFe11V_i_fullexp_lambda411,SmFe11Co_i_fullexp_lambda411
+! substituted sytem: SmFe11Ti_j_fullexp_lambda411,SmFe11V_j_fullexp_lambda411,SmFe11Co_j_fullexp_lambda411

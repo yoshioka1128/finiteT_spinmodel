@@ -1,0 +1,34 @@
+15c15
+< real(8) :: part(nrmax),part0(nrmax),temp,free,free0,dtheta,dtheta0,dphi,dphi0
+---
+> real(8) :: part(nrmax),part0(nrmax),temp,free,free0,dtheta,dphi,dphi0
+21c21
+< integer(4) :: m,n,i,k,l,imax,ii,jj,INFO,LWORK,it,ip,ll,ir,ife,i1,i2,ncfp,ipmax
+---
+> integer(4) :: m,n,i,k,l,imax,ii,jj,INFO,LWORK,it,ip,ll,ir,ife,i1,i2,ncfp,ipmax,itmax
+294d293
+< dtheta0=0.5d0*pi/dble(int(0.5d0*pi/dtheta))
+296,297c295,297
+< do it=0,int(0.5d0*pi/dtheta) ! take three point
+<    theta=dtheta0*dble(it)
+---
+> itmax=int(0.5d0*pi/dtheta)
+> do it=0,itmax ! take three point
+>    theta=0.5d0*pi*dble(it)/dble(itmax)
+300c300
+<       ipmax=int(0.5d0*pi/dphi)
+---
+>       ipmax=int(0.5d0*pi/dphi)+1
+302c302
+<       ipmax=0
+---
+>       ipmax=1
+305c305
+<       phi=0.5d0*pi*dble(ip)/dble(int(0.5d0*pi/dphi))
+---
+>       phi=0.5d0*pi*dble(ip)/dble(ipmax)
+306a307,308
+>       write(6,*) "theta,phi",theta,phi,ipmax
+>       if(it.eq.50) stop
+354a357
+> stop

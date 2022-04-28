@@ -1,0 +1,9 @@
+SmFe12_L3			! system
+300.0d0	 		! temp: temperature for SmFe11TM Tc=555.0
+5	 		! nJex: number of excited states e.g. 0:lowestJ, 1:LowestJ+secondJ
+opencore		! method: "Yamada" "opencore" "Hummler"
+wK1Fe			! wK1Fe or woK1Fe
+110 			! direction: direction of magnetic field
+400.0d0 1.0d0		! Hmax [kOe], dH in unit kOe: maximum and increment of magnetic field
+0.004d0			! dtheta: increment of \theta (rad)
+0.015d0			! dphi: increment of \phi (rad)

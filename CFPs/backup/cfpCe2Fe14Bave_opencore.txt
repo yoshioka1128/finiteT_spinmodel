@@ -1,0 +1,17 @@
+Ce 2 Fe 14		! system
+4			! multiplicity in single unitcell
+8.75d0 8.75d0 12.10d0 90.0d0	! lattice constants (angstrom)
+920.0d0       		! \lambda
+422.0d0 0.5d0 31.4d0	! Tc, s, Ms: paramters for Kuzmin fitting
+Ce f1 atom 1
+490.5 Hm
+1.0d0 1.0d0 1.0d0 3
+450.638563d0	2	0
+-62.81006927d0	4	0
+-3.354432565d0	6	0
+Ce f1 atom 1
+490.5 Hm
+1.0d0 1.0d0 1.0d0 3
+450.638563d0	2	0
+-62.81006927d0	4	0
+-3.354432565d0	6	0

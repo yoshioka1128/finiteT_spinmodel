@@ -1,0 +1,19 @@
+Sm 2 Fe 17 system
+3			! mutiplicity in the cell
+8.557d0 8.557d0 12.448d0 120.0d0 ! lattice constants (angstrom)
+350.0d0 ! \lambda
+2.0d0 380.0d0 0.7d0 2.5d0 	! Ms, Tc, s, p: paramters for Kuzmin PRL (2005)
+Sm 1
+354.1d0 Hm
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+-171.0d0    2	  0
+-19.2d0	    4	  0
+-0.19d0	    6	  0
+39.2d0	    6	  6
+Sm 2
+354.1d0 Hm
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+-171.0d0    2	  0
+-19.2d0	    4	  0
+-0.19d0	    6	  0
+39.2d0	    6	  6

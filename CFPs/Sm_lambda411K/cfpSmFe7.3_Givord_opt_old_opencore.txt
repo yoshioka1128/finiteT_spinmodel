@@ -1,0 +1,70 @@
+Sm 9 Fe 66 system	! R nR TM nfe
+1.0d0			! mutiplicity in single unitcell (prism)
+8.328d0 8.328d0 16.148d0 120.0d0	! aleng, bleng, cleng, angle: lattice constants (angstrom)
+411.0d0 \lambda (K)
+51.62541d0 555.0d0 1.01d0 2.5d0 ! Ms/nFe, Tc, s, p: paramters for Kuzmin PRL (2005), Ms=31.4 f.u.
+0.0d0 -0.2631579d0 -0.2368421d0   ! K1Fe(0)/nFe, K2Fe/K1Fe,K3Fe/K1Fe
+Sm 1
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -303.283806715361                 2           0
+  -46.1482833007615                 4           0
+   3.88072362867316                 6           0
+   77.6612286532782                 6           6
+Sm 2
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -303.217204968932                 2           0
+  -46.1464617186329                 4           0
+   3.88083606745156                 6           0
+   77.6603821241565                 6           6
+Sm 3
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -298.673231967002                 2           0
+  -44.0825588788231                 4           0
+   4.37885960953931                 6           0
+   81.7343177416552                 6           6
+Sm 4
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -190.987804820099                 2           0
+  -49.2848880348360                 4           0
+   8.34180575865648                 6           0
+   189.963340009278                 6           6
+Sm 5
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+ -0.619006408212976                 2           0
+  -1.31114863559571                 4           0
+  -3.03379843477766                 6           0
+   64.0140160843627                 6           6
+Sm 6
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -72.3591981847607                 2           0
+   3.68966033382407                 4           0
+ -0.641465195761838                 6           0
+   125.973120412063                 6           6
+Sm 7
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -163.543768678519                 2           0
+  -26.2358873342604                 4           0
+  0.593387507724178                 6           0
+   68.3885028146228                 6           6
+Sm 8
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -163.474012452189                 2           0
+  -26.2396282581728                 4           0
+  0.593489252823635                 6           0
+   68.3889089598128                 6           6
+Sm 9
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -141.488062079664                 2           0
+  -46.1434018605313                 4           0
+   8.19942294439324                 6           0
+   197.941545045228                 6           6
+

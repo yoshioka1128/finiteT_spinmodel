@@ -1,0 +1,27 @@
+Sm 3 Fe 22 system	! R nR TM nfe
+1.0d0			! mutiplicity in single unitcell (prism)
+4.75116d0 4.75116d0 16.51953d0 120.0d0	 ! V=322.9443, V/3=107.64810
+411.0d0 \lambda (K)
+51.62541d0 555.0d0 1.01d0 2.5d0 ! Ms/nFe, Tc, s, p: paramters for Kuzmin PRL (2005), Ms=31.4 f.u.
+0.0d0 -0.2631579d0 -0.2368421d0   ! K1Fe(0)/nFe, K2Fe/K1Fe,K3Fe/K1Fe
+Sm 1
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -31.7152665881699                 2           0
+  -33.3046845304819                 4           0
+   7.68438659188990                 6           0
+  -198.427942987943                 6           6
+Sm 2
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -156.839723712223                 2           0
+  -43.3873056268153                 4           0
+   8.92697024817637                 6           0
+  -199.407047933325                 6           6
+Sm 3
+300.0d0 1.0d0 ! Hm for Sm1 and reduced factor rd
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+  -31.7045355487587                 2           0
+  -33.3053642367575                 4           0
+   7.68448580409440                 6           0
+  -198.428751193770                 6           6

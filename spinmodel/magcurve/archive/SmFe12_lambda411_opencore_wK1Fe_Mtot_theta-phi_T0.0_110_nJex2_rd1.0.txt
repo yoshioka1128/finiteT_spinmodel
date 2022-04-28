@@ -1,0 +1,2 @@
+ # applied field (T), theta (degree), phi (degree), abs [muB/unitcell], abs [T]
+       0.00000000       0.00000000       0.00000000      52.23298219       1.81889681

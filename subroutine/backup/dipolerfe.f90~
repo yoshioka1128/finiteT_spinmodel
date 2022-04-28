@@ -1,0 +1,49 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+subroutine dipolerfe(irpt,ifept,nunit,nunitx,nunity,nunitz,nr,nfe,rfe,rr,rfept,rrpt,ax,cx,diprfe,dipfefe,dipfer,diprr)
+implicit none
+integer(4) :: nunit,nr,nfe,nunitx,nunity,nunitz,irpt(nr,nunitx,nunity,nunitz),ifept(nfe,nunitx,nunity,nunitz)
+integer(4) :: i,i2,ir,ir2,ife,ife2,ix,iy,iz,ix2,iy2,iz2,ixd,iyd,izd
+integer(4) :: ipt1,ipt2,idim,idim2
+real(8) :: rfe(nfe,3),rr(nr,3),ax,cx,rfept(nfe*nunit,3),rrpt(nr*nunit,3),delta(3,3),dis,dr(3),dfe(3),drfe(3),dfer(3),abc(3)
+real(8) :: diprfe(-nunitx:nunitx,-nunity:nunity,-nunitz:nunitz,nr,nfe,3,3),dipfefe(-nunitx:nunitx,-nunity:nunity,-nunitz:nunitz,nfe,nfe,3,3)
+real(8) :: dipfer(-nunitx:nunitx,-nunity:nunity,-nunitz:nunitz,nfe,nr,3,3),diprr(-nunitx:nunitx,-nunity:nunity,-nunitz:nunitz,nr,nr,3,3)
+
+abc(1)=ax
+abc(2)=ax
+abc(3)=cx
+
+delta=0.0d0
+do i=1,3
+   delta(i,i)=1.0d0
+end do
+
+do izd=-nunitz,nunitz
+   do iyd=-nunity,nunity
+      do ixd=-nunitx,nunitx
+         do i2=1,nfe
+            do i=1,nr
+               drfe(1)=dble(ixd)*ax+rr(i,1)-rfe(i2,1)
+               drfe(2)=dble(iyd)*ax+rr(i,2)-rfe(i2,2)
+               drfe(3)=dble(izd)*cx+rr(i,3)-rfe(i2,3)
+               
+               dis=0.0d0
+               do idim=1,3
+                  dis=dis+drfe(idim)**2
+               end do
+               dis=dsqrt(dis)
+               
+               do idim2=1,3
+                  do idim=1,3
+                     diprfe(ixd,iyd,izd,i,i2,idim,idim2)=(delta(idim,idim2)-3.0d0*drfe(idim)*drfe(idim2)/dis**2)/dis**3
+                  end do
+               end do
+               
+            end do
+         end do
+      end do
+   end do
+end do
+
+end subroutine dipolerfe
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+

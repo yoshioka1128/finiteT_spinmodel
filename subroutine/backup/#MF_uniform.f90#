@@ -1,0 +1,156 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+subroutine MF_uniform(nfe,nr,nunit,temp,magFe,magR,JRFe,JFeR,JFeFe,JRR,Ku,KuFe)
+implicit none
+real(8),parameter :: ax=8.81d0,cx=12.21d0 ! (angstrom)
+real(8),parameter :: mev=1.60218d-21 ! (Merg/mev) ! 1 (erg)=1.0d-7 (J)=6.24151d11 (ev)
+real(8),parameter :: kb=8.6173303d-2*mev ! (Merg/K)
+real(8),parameter :: joule=10.0d0 ! (Merg)
+real(8),parameter :: muB=9.274d-24 ! (Merg/kOe) or (kerg/Oe)
+real(8),parameter :: d=4.0d0*1.0d24/(ax**2*cx)*muB ! (kOe) or (kerg/Oe/cm^3)
+real(8) :: temp,gf=2.0d0,gr=8.0d0/11.0d0,magR(nr*nunit),magFe(nfe*nunit),Hm
+real(8) :: nff,nrr,nrf
+real(8) :: Zff,Zrf,Zrr
+real(8) :: alphaf,betar,Jr,Jf
+real(8) :: JRFe,JFeR,JFeFe,JRR,Ku,KuFe,Brillouin,muFe,mu
+real(8) :: HRT,HFeT,xR,xFe,abc,def,magFe0,magR0,magtot0,rande,Stot,Ltot,Jtot,magFe1,magR1,magFe2,magR2
+integer(4) :: nfe,nr,nunit,i,ite,itemp
+
+! Herbst et al.
+if(temp.eq.0.0d0.or.temp.eq.4.2) then
+   magFe=
+else if(temp.eq.200.0d0) then
+   magFe=2.05d0*muB
+   magR=2.61d0*muB
+   KuFe=1.05d0*joule*ax**2*cx*1.0d-30/dble(nfe) !(Merg) Hirosawa
+   Ku=5.30948717919229d0*1.0d6*(ax**2*cx*1.0d-30)*joule/8.0d0 ! (Merg) Hm=350 K Yamada
+else if(temp.eq.300.0d0) then
+   magFe=1.96d0*muB
+   magR=1.96d0*muB
+   KuFe=1.13d0*joule*ax**2*cx*1.0d-30/dble(nfe)
+   Ku=5.00119980243961d0*1.0d6*(ax**2*cx*1.0d-30)*joule/8.0d0 ! (Merg) Hm=350*1.96/2.05=335 K Yamada
+else if(temp.eq.400.0d0) then
+   magFe=1.77d0*muB
+   magR=1.52d0*muB
+   KuFe=0.97d0*joule*ax**2*cx*1.0d-30/dble(nfe)
+   Ku=3.59964871818093d0*1.0d6*(ax**2*cx*1.0d-30)*joule/8.0d0 ! (Merg) Hm=350*1.77/2.05=302 K Yamada
+else if(temp.eq.500.0d0) then
+   magFe=1.43d0*muB
+   magR=1.09d0*muB
+   KuFe=0.5d0*joule*ax**2*cx*1.0d-30/dble(nfe)
+   Ku=1.98032822229053d0*1.0d6*(ax**2*cx*1.0d-30)*joule/8.0d0 ! (Merg) Hm=350*1.43/2.05=244 K Yamada
+else 
+   stop
+end if
+
+
+! Molecular field approx.
+! NdFeB molecular field coefficients by Fuerst
+nff=5868d0
+nrf=2198.0d0
+nrr=335.0d0
+! NdFeB angular momentum
+Stot=3.0d0/2.0d0
+Ltot=6.0d0
+Jtot=dabs(Ltot-Stot)
+rande=1.5d0+(Stot*(Stot+1.0d0)-Ltot*(Ltot+1.0d0))/(2.0d0*Jtot*(Jtot+1.0d0))
+
+magtot0=35.8d0
+magR0=9.0d0/2.0d0*rande
+magFe0=(magtot0-magR0*2.0d0)/14.0d0
+magR1=magR0
+magFe1=magFe0
+
+
+open (11,file="magnetization_Tdept.txt")
+write(6,*) "2*muR, 14*muFe, mutot (mu_B/f.u.)"
+do itemp=1,70
+temp=dble(itemp)*10.0d0
+magtot0=35.8d0
+magR0=9.0d0/2.0d0*rande
+magFe0=(magtot0-magR0*2.0d0)/14.0d0
+magR1=magR0
+magFe1=magFe0
+
+do ite=1,20000
+   write(6,"(I5,3F15.5)") ite,2.0d0*magR1,14.0d0*magFe1,magFe1*14.0d0+magR1*2.0d0
+
+   HRT=d*(2.0d0*nrr*magR1+14.0d0*nrf*magFe1)
+   HFeT=d*(14.0d0*nff*magFe1+2.0d0*nrf*magR1)
+
+!write(6,*) muB*magR0*HRT/(kb*temp),muB*magFe0*HFeT/(kb*temp)
+   xR=muB*magR0*HRT/(kb*temp)
+   xFe=muB*magFe0*HFeT/(kb*temp)
+
+   magR1=magR0*Brillouin(9.0d0/2.0d0,xR)
+   magFe1=magFe0*Brillouin(1.0d0,xFe)
+   if(abs(magR1-magR2)/magR0.lt.1.0d-5.and.abs(magFe1-magFe2)/magFe0.lt.1.0d-5) exit
+   magR2=magR1
+   magFe2=magFe1
+end do
+write(6,*) "2*muR, 14*muFe, mutot (mu_B/f.u.)"
+write(6,"(I5,3F15.5)") ite,2.0d0*magR1,14.0d0*magFe1,magFe1*14.0d0+magR1*2.0d0
+
+write(11,"(4F15.5)") temp,2.0d0*magR1,14.0d0*magFe1,magFe1*14.0d0+magR1*2.0d0
+end do
+
+
+open(19,file="Brillouin_J3.5.txt")
+do i=1,500
+!   x=dble(i)/100.0d0
+!   abc=Brillouin(0.5d0,x)
+!   write(19,*) x,abc
+end do
+
+!stop
+
+
+! bond number
+Zff=10.5d0
+Zrf=16.0d0
+Zrr=2.5d0
+
+JRFe=14.0d0*d*muB/Zrf*2.0d0*(gr/(gr-1.0d0))*nrf ! d*muB (kOe) 
+JFeFe=7.0d0*d*muB/Zff*4.0d0*nff
+JRR=d*muB/Zrr*(gr/(gr-1.0d0))**2*nrr
+
+Hm=d*(2.0d0*nrr*magFe(1)+14.0d0*nrf*magR(1))/kb ! d (kOe), magFe (muB), d*magFe (Merg), d*magFe/mev/kb (K)
+
+write(6,*) "JFeFe, JRFe, JRR (mev)"
+write(6,*) JFeFe/mev,JRFe/mev,JRR/mev
+write(6,*) "molecular field for muR (K)"
+write(6,*) Hm,(2.0d0*((gr-1.0d0)/gr)**2*JRR*Zrr*magR(1)+0.5d0*(gr-1.0d0)/gr*JRFe*Zrf*magFe(1))/muB/kb
+write(6,*) "molecular field for 2*(g-1)*J (K)"
+write(6,*) Hm*gr/(gr-1.0d0)/2.0d0,(JRFe/gf*16.0d0*magFe(1)+2.0d0*JRR*(gr-1.0d0)/gr*2.5d0*magR(1))/2.0d0/muB/kb
+
+JRFe=JRFe*(gr-1)/(gf*gr)/muB**2 ! (kOe/muB^2)
+JFeR=JRFe
+JFeFe=2.0d0*JFeFe/(gf**2)/muB**2
+JRR=2.0d0*JRR*((gr-1.0d0)/gr)**2/muB**2
+
+!write(6,*) JRFe,JFeFE,JRR
+!write(6,*) magFe(1),magR(1)
+
+! for Tc
+Jr=9.0d0/2.0d0 ! if Nd
+Jf=1.0d0
+alphaf=14.0d0*(gf*Jf)**2*d*muB/kb*(Jf+1.0d0)/(3.0d0*Jf)
+betar=2.0d0*(gr*Jr)**2*d*muB/kb*(Jf+1.0d0)/(3.0d0*Jf)
+write(6,*) "Tc (K) R2Fe14B"
+write(6,*) 0.5d0*(alphaf*nff+betar*nrr+dsqrt((alphaf*nff-betar*nrr)**2+4.0d0*alphaf*betar*nrf**2))
+write(6,*) "Tc (K) Fe2"
+write(6,*) alphaf*nff
+write(6,*) "Tc (K) R2"
+write(6,*) betar*nrr
+
+end subroutine MF_uniform
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+function Brillouin(J,x)
+real(8) :: x,J,Brillouin
+
+Brillouin=(2.0d0*J+1.0d0)/(2.0d0*J)/dtanh((2.0d0*J+1.0d0)*x/(2.0d0*J))-1.0d0/(2.0d0*J)/dtanh(x/(2.0d0*J))
+
+end function Brillouin
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

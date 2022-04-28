@@ -1,0 +1,19 @@
+Eu 2 Fe 17 system
+3			! mutiplicity in the cell
+8.557d0 8.557d0 12.448d0 120.0d0 ! lattice constants (angstrom)
+390.0d0 ! \lambda
+380.0d0 0.7d0 2.0d0	! Tc, s, Ms: paramters for Kuzmin fitting p=5/2 Ms=2.3*17 [muB/f.u.]
+Sm 1
+372.5d0 Hm
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+-8.85d0    2	  0
+-22.4d0	    4	  0
+0.0d0	    6	  0
+74.6d0	    6	  6
+Sm 2
+372.5d0 Hm
+1.0d0 1.0d0 1.0d0 4	! <r^l>, number of CFPs
+-8.85d0    2	  0
+-22.4d0	    4	  0
+0.0d0	    6	  0
+74.6d0	    6	  6

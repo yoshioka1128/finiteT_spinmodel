@@ -1,0 +1,19 @@
+Eu 2 Fe 17 system
+3			! mutiplicity in the cell
+8.7206d0 8.7206d0 12.6345d0 120.0d0 ! lattice constants (angstrom) Inami JAP
+390.0d0 ! \lambda
+620.0d0 0.7d0 2.3d0	! Tc, s, Ms: paramters for Kuzmin fitting p=5/2
+Sm 1
+150.5 Hm
+1.0d0 1.0d0 1.0d0 4
+-686.0d0	2	0
+10.9d0		4	0
+-1.10d0		6	0
+28.1d0		6	6
+Sm 1
+150.5 Hm
+1.0d0 1.0d0 1.0d0 4
+-686.0d0	2	0
+10.9d0		4	0
+-1.10d0		6	0
+28.1d0		6	6

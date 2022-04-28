@@ -1,0 +1,2 @@
+ # applied field (T), theta (degree), phi (degree), abs
+     0.00000     0.00000     0.00000    51.62541
